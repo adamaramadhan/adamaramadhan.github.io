@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Adam Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="color: inherit; text-decoration: none;"><h1>Adam Ramadhan</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publications.html" class="current">Publications</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-header">
+                <h1>Publications</h1>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-dropdown" id="pubFilter">
+                    <button class="filter-btn" onclick="toggleFilter('pubFilter')">
+                        Filter
+                        <span class="filter-chevron">&#9660;</span>
+                    </button>
+                    <div class="filter-menu" id="pubFilterMenu">
+                        <span class="filter-menu-section-label">Year</span>
+                        <button class="active" onclick="filterPub('all', this)">All</button>
+                        <button onclick="filterPub('2025', this)">2025</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid" id="pubList">
+
+                <!-- Publication 1 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="https://doi.org/10.1163/24682470-12340121" target="_blank" class="card-image">
+                        <img src="/photos/SSR_Report_2025.jpg" alt="Publication cover">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://doi.org/10.1163/24682470-12340121" target="_blank">Conference Report: “Compiling a Tradition: The History and Development of the Early Imami Hadith Corpora”, Al-Mahdi Institute, Birmingham, United Kingdom, 12–13 February 2024</a></h3>
+                        <div class="card-meta">
+                            <span class="card-venue">Shii Studies Review</span>
+                            <span class="card-sep">·</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /card-grid -->
+        </div><!-- /container -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Adam Ramadhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="filter.js"></script>
+</body>
+</html>

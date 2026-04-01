@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Adam Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="color: inherit; text-decoration: none;"><h1>Adam Ramadhan</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="events.html" class="current">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-header">
+                <h1>Events</h1>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-dropdown" id="eventFilter">
+                    <button class="filter-btn" onclick="toggleFilter('eventFilter')">
+                        Filter
+                        <span class="filter-chevron">&#9660;</span>
+                    </button>
+                    <div class="filter-menu" id="eventFilterMenu">
+                        <span class="filter-menu-section-label">Year</span>
+                        <button class="active" onclick="filterCards('eventFilter', 'eventList', 'all', this)">All</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2026', this)">2026</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2025', this)">2025</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2024', this)">2024</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2023', this)">2023</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2022', this)">2022</button>
+                        <button onclick="filterCards('eventFilter', 'eventList', '2021', this)">2021</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid" id="eventList">
+
+                <!-- Event 18 — 2026 -->
+                <div class="card" data-year="2026">
+                    <a href="https://www.universiteitleiden.nl/en/events/2026/06/the-social-dynamics-of-communal-affiliation-in-early-islam" class="card-image">
+                        <img src="/photos/Communal_Affiliations_Workshop_2026.jpg" alt="Congregational Prayer and Communal Boundaries in the Early Imāmī Community">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.universiteitleiden.nl/en/events/2026/06/the-social-dynamics-of-communal-affiliation-in-early-islam">Congregational Prayer and Communal Boundaries in the Early Imāmī Community</a></h3>
+                        <h4>The Social Dynamics of Communal Affiliation in Early Islam Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">11–12 June 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 17 — 2026 -->
+                <div class="card" data-year="2026">
+                    <a href="https://www.universiteitleiden.nl/en/events/2026/06/the-social-dynamics-of-communal-affiliation-in-early-islam" class="card-image">
+                        <img src="/photos/Communal_Affiliations_Workshop_2026.jpg" alt="The Social Dynamics of Communal Affiliation in Early Islam">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.universiteitleiden.nl/en/events/2026/06/the-social-dynamics-of-communal-affiliation-in-early-islam">The Social Dynamics of Communal Affiliation in Early Islam</a></h3>
+                        <h4>Workshop Organised by Adam Ramadhan & Edmund Hayes</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">11–12 June 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 16 — 2026 -->
+                <div class="card" data-year="2026">
+                    <a href="https://www.brais.ac.uk/conferences/brais-2026/brais-2026-programme" class="card-image">
+                        <img src="/photos/BRAIS.jpg" alt="Congregational Prayer and Communal Boundaries in the Early Imāmī Community">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.brais.ac.uk/conferences/brais-2026/brais-2026-programme">Congregational Prayer and Communal Boundaries in the Early Imāmī Community</a></h3>
+                        <h4>11th British Association for Islamic Studies Conference</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Institute for the Study of Muslim Civilisations, Aga Khan University & The Institute for Ismaili Studies, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">18–19 May 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 15 — 2026 -->
+                <div class="card" data-year="2026">
+                    <a href="#" class="card-image">
+                        <img src="/photos/Lausanne.jpg" alt="Early Imāmī Law and the Establishment of Communal Boundaries">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="#">Early Imāmī Law and the Establishment of Communal Boundaries</a></h3>
+                        <h4>Reading Shiʿi <i>Fiqh</i> Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Université de Lausanne, Switzerland</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">12 May 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 14 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="https://ammem.hcommons.org/past-meetings/" class="card-image">
+                        <img src="/photos/AMMEM_2025.jpg" alt="I Do Not Pray Behind…: Prayer as Communal Boundary Making in Early Islam">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://ammem.hcommons.org/past-meetings/">"I Do Not Pray Behind…”: Prayer as Communal Boundary Making in Early Islam</a></h3>
+                        <h4>Annual Medieval Middle East Meeting</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">17 October 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 13 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="https://www.imc.leeds.ac.uk/imc/imc-2025/" class="card-image">
+                        <img src="/photos/IMC_2025.jpg" alt="What was a ‘Companion’ in Early Imāmī Shiʿism?">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.imc.leeds.ac.uk/imc/imc-2025/">What was a ‘Companion’ in Early Imāmī Shiʿism?</a></h3>
+                        <h4>International Medieval Congress</h4>
+                        <div class="card-meta">
+                            <span class="card-location">University of Leeds, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">7–10 July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 12 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="https://www.brais.ac.uk/conferences/brais-2025/brais-2025-programme" class="card-image">
+                        <img src="/photos/BRAIS.jpg" alt="The Imāmī Imāms and their Non-Imāmī Companions in Bio-Bibliographical Works">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.brais.ac.uk/conferences/brais-2026/brais-2025-programme">The Imāmī Imāms and their Non-Imāmī Companions in Bio-Bibliographical Works</a></h3>
+                        <h4>10th British Association for Islamic Studies Conference</h4>
+                        <div class="card-meta">
+                            <span class="card-location">University of Cambridge, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">30 June – 1 July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 11 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="https://www.unior.it/it/eventi/policing-prayer-sectarian-islam-spaces-temporalities-coercion-7th-15th-centuries" class="card-image">
+                        <img src="/photos/Naples_Workshop_2025.jpg" alt="Asking the Imām about the imām: Prayer Leadership in the Early Imāmī Community">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.unior.it/it/eventi/policing-prayer-sectarian-islam-spaces-temporalities-coercion-7th-15th-centuries">Asking the Imām about the imām: Prayer Leadership in the Early Imāmī Community</a></h3>
+                        <h4>Policing the Prayer in Sectarian Islam: Spaces, Temporalities, Coercion (7th–15th Centuries) Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Università di Napoli L’Orientale, Italy</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">27–28 February 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 10 — 2025 -->
+                <div class="card" data-year="2025">
+                    <a href="#" class="card-image">
+                        <img src="/photos/Hamburg_2025.jpg" alt="The Imāmī Imāms and their Zaydī ‘Companions’: Some Thoughts on Imāmic Circles">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="#">The Imāmī Imāms and their Zaydī ‘Companions’: Some Thoughts on Imāmic Circles</a></h3>
+                        <h4>Zaydī Networks in the Early Islamic Period Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universität Hamburg, Germany</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">28–29 January</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 9 — 2024 -->
+                <div class="card" data-year="2024">
+                    <a href="#" class="card-image">
+                        <img src="/photos/Imam_Workshop_2024.jpg" alt="What is an Imam? Workshop">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="#">What is an Imam? Workshop</a></h3>
+                        <h4>Workshop Organised by Edmund Hayes & Adam Ramadhan</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">15 November 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 8 — 2024 -->
+                <div class="card" data-year="2024">
+                    <a href="https://www.staff.universiteitleiden.nl/events/2024/11/what-is-an-imam-workshop" class="card-image">
+                        <img src="/photos/Imam_Workshop_2024.jpg" alt="“We Have an imām Who Opposes Us and Hates Our People”: On Prayer Leadership in Shiʿi Hadith">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.staff.universiteitleiden.nl/events/2024/11/what-is-an-imam-workshop">“We Have an imām Who Opposes Us and Hates Our People”: On Prayer Leadership in Shiʿi Hadith</a></h3>
+                        <h4>What is an Imam? Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">15 November 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 7 — 2024 -->
+                <div class="card" data-year="2024">
+                    <a href="https://www.staff.universiteitleiden.nl/events/2024/11/what-is-an-imam-workshop" class="card-image">
+                        <img src="/photos/Leiden.jpg" alt="How to Bury an Imām in Early Islam">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.staff.universiteitleiden.nl/events/2024/11/what-is-an-imam-workshop">How to Bury an Imām in Early Islam</a></h3>
+                        <h4>Leiden Comparative Religion Network</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Universiteit Leiden, Netherlands</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">13 September 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 — 2024 -->
+                <div class="card" data-year="2024">
+                    <a href="https://almahdi.edu/ami-holds-its-inaugural-hadith-studies-conference-on-the-history-and-development-of-the-early-imami-hadith-corpora/" class="card-image">
+                        <img src="/photos/AMI_Hadith_Workshop_2024.jpg" alt="Compiling a Tradition: The History and Development of the Early Imāmī Hadith Corpora">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://almahdi.edu/ami-holds-its-inaugural-hadith-studies-conference-on-the-history-and-development-of-the-early-imami-hadith-corpora/">Compiling a Tradition: The History and Development of the Early Imāmī Hadith Corpora</a></h3>
+                        <h4>Conference Organised by Haidar Hobballah & Adam Ramadhan</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Al-Mahdi Institute, Bimringham, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">12–13 February 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 — 2023 -->
+                <div class="card" data-year="2023">
+                    <a href="#" class="card-image">
+                        <img src="/photos/Birmingham.jpg" alt="Al-Fāḍil al-Tūnī (d. 1071/1660) on the Need for ijtihād">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="#">Al-Fāḍil al-Tūnī (d. 1071/1660) on the Need for ijtihād</a></h3>
+                        <h4>Ijtihād and taqlīd in Arabic Texts PGR Workshop</h4>
+                        <div class="card-meta">
+                            <span class="card-location">University of Birmingham & Al-Mahdi Institute, Birmingham, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">26 June 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 — 2022 -->
+                <div class="card" data-year="2022">
+                    <a href="https://www.brais.ac.uk/conferences/brais-conference-2022/brais-2022-provisional-programme" class="card-image">
+                        <img src="/photos/BRAIS.jpg" alt="<i>Qāʿidat al-injibār</i>: The Debate Over Rehabilitating Traditions in Imāmī Legal Theory">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://www.brais.ac.uk/conferences/brais-conference-2022/brais-2022-provisional-programme"><i>Qāʿidat al-injibār</i>: The Debate Over Rehabilitating Traditions in Imāmī Legal Theory</a></h3>
+                        <h4>8th British Association for Islamic Studies Conference</h4>
+                        <div class="card-meta">
+                            <span class="card-location">University of Edinburgh, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">6–7 June 2022</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 — 2022 -->
+                <div class="card" data-year="2022">
+                    <a href="https://almahdi.edu/1st-ami-graduate-islamic-studies-conference/" class="card-image">
+                        <img src="/photos/AMI_Graduate_Workshop_2022.jpg" alt="Al-Mahdi Institute Graduate Conference in Islamic Studies">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://almahdi.edu/1st-ami-graduate-islamic-studies-conference/">Al-Mahdi Institute Graduate Conference in Islamic Studies</h3>
+                        <h4>Organised by Adam Ramadhan</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Al-Mahdi Institute, Birmingham, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">28–29 May 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 — 2022 -->
+                <div class="card" data-year="2022">
+                    <a href="https://isils.net/isils/conferences/the-10th-islamic-legal-studies-conference-london-19-21-may-2022/" class="card-image">
+                        <img src="/photos/ISILS_2022.jpg" alt="<i>Qāʿidat al-injibār</i>: The Debate Over Rehabilitating Traditions in Imāmī Legal Theory">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="https://isils.net/isils/conferences/the-10th-islamic-legal-studies-conference-london-19-21-may-2022/"><i>Qāʿidat al-injibār</i>: The Debate Over Rehabilitating Traditions in Imāmī Legal Theory</a></h3>
+                        <h4>10th International Society for Islamic Legal Studies Conference</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Institute for the Study of Muslim Civilisations, Aga Khan University, London, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">19–21 May 2022</span>
+                        </div>
+                    </div>
+                </div>
+                            
+                <!-- Event 1 — 2021 -->
+                <div class="card" data-year="2021">
+                    <a href="#" class="card-image">
+                        <img src="/photos/AMI.jpg" alt="Debating Friends in Early Islam">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="#">Debating Friends in Early Islam</h3>
+                        <h4>Centre for Intra-Muslim Studies Graduate Symposium</h4>
+                        <div class="card-meta">
+                            <span class="card-location">Al-Mahdi Institute, Birmingham, United Kingdom</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">3 October 2021</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- /card-grid -->
+        </div><!-- /container -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Adam Ramadhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Adam Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--
+    ═══════════════════════════════════════════════════════════
+    BLOG TAG LIST
+    Add new tags here, separated by spaces, each prefixed with #.
+    These populate the Tags section of the filter dropdown.
+    Example: #islamicstudies #research #shiism #history
+    ═══════════════════════════════════════════════════════════
+    -->
+    <meta name="blog-tags" content="#history">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="color: inherit; text-decoration: none;"><h1>Adam Ramadhan</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="current">Blog</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-header">
+                <h1>Blog</h1>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-dropdown" id="blogFilter">
+                    <button class="filter-btn" onclick="toggleFilter('blogFilter')">
+                        Filter
+                        <span class="filter-chevron">&#9660;</span>
+                    </button>
+                    <div class="filter-menu" id="blogFilterMenu">
+
+                        <span class="filter-menu-section-label">Year</span>
+                        <div id="blogYearSection">
+                            <button class="active" onclick="filterBlogYear('all', this)">All</button>
+                            <button onclick="filterBlogYear('2026', this)">2026</button>
+                        </div>
+
+                        <span class="filter-menu-section-label">Tags</span>
+                        <div id="blogTagSection">
+                            <button class="active" onclick="filterBlogTag('all', this)">All</button>
+                            <!-- tag buttons injected by buildBlogTagButtons() -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            ═══════════════════════════════════════════════════════════
+            BLOG CARDS
+            Each card needs:
+              data-year="YYYY"
+              data-tags="tag1 tag2"  ← space-separated, no # prefix,
+                                        matching tags in the meta above
+            ═══════════════════════════════════════════════════════════
+            -->
+            <div class="card-grid" id="blogList">
+
+                <!-- Post 1 -->
+                <div class="card" data-year="2026" data-tags="history">
+                    <a href="posts/post.html" class="card-image">
+                        <img src="/photos/maqbara.jpg" alt="The First ʿAlids of Egypt">
+                    </a>
+                    <div class="card-body">
+                        <h3><a href="posts/post.html">The First ʿAlids of Egypt</a></h3>
+                        <div class="card-meta">
+                            <span class="card-date">1 June 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /card-grid -->
+        </div><!-- /container -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Adam Ramadhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="filter.js"></script>
+    <script>
+        buildBlogTagButtons();
+    </script>
+</body>
+</html>
