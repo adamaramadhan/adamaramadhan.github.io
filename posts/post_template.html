@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title | Adam Ramadhan</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" style="color: inherit; text-decoration: none;"><h1>Adam Ramadhan</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog.html" class="current">Blog</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <div class="container">
+
+                <!-- ════════════════════════════════════════
+                     TITLE
+                     ════════════════════════════════════════ -->
+                <h1>Your Blog Post Title Goes Here</h1>
+
+                <!-- ════════════════════════════════════════
+                     DATE
+                     ════════════════════════════════════════ -->
+                <span class="meta">2 April 2025</span>
+
+                <!-- ════════════════════════════════════════
+                     TAGS  (hidden from readers — filter only)
+                     Enter tags here separated by spaces, each with #.
+                     Copy the same tags (without #) into data-tags=""
+                     on the matching card in blog.html.
+                     Example:  #islamicstudies #research #shiism
+                     ════════════════════════════════════════ -->
+                <meta name="post-tags" content="#islamicstudies #research">
+
+                <!-- ════════════════════════════════════════
+                     FEATURED IMAGE
+                     ════════════════════════════════════════ -->
+                <img src="../photos/profile.jpg" alt="Featured image" class="featured-image">
+
+                <!-- ════════════════════════════════════════
+                     CONTENT
+                     ════════════════════════════════════════ -->
+                <div class="content">
+
+                    <p>This is your blog post introduction. Write a captivating opening paragraph that draws your readers in and sets the stage for what they are about to read.<cite class="en">This is an example endnote. It will appear numbered in the text and collected in a Notes section at the end of the post.</cite></p>
+
+                    <p>Continue with additional context or background information. You can add as many endnotes as you like by placing <code>&lt;cite class="en"&gt;Note text.&lt;/cite&gt;</code> anywhere in the text — the numbers are assigned automatically in order.</p>
+
+                    <h2>First Main Section Heading</h2>
+
+                    <p>Begin the first main section here. Keep each paragraph focused on a single idea.<cite class="en">A second example endnote demonstrating that multiple notes work correctly and are numbered sequentially.</cite></p>
+
+                    <p>Continue developing your thoughts with supporting details and evidence.</p>
+
+                    <h3>A Sub-section Heading</h3>
+
+                    <p>Use sub-headings to break down complex topics into manageable sections.</p>
+
+                    <img src="/api/placeholder/600/300" alt="Image caption">
+
+                    <p>After an image, explain what it shows and why it is relevant to your discussion.</p>
+
+                    <blockquote>
+                        <p>This is an example blockquote. Use these to highlight important quotations or key passages.</p>
+                        <cite>— Attribution</cite>
+                    </blockquote>
+
+                    <h2>Second Main Section Heading</h2>
+
+                    <p>Begin your second main section here, building on what came before.</p>
+
+                    <ul>
+                        <li>First item in an unordered list</li>
+                        <li>Second item with additional detail</li>
+                        <li>Third item</li>
+                    </ul>
+
+                    <h3>Another Sub-section Heading</h3>
+
+                    <p>Continue with further analysis or examples.</p>
+
+                    <ol>
+                        <li>First step in a process</li>
+                        <li>Second step that follows logically</li>
+                        <li>Third step</li>
+                    </ol>
+
+                    <h2>Conclusion</h2>
+
+                    <p>Summarise the main points and remind readers why the topic matters. A strong conclusion synthesises your ideas and leaves readers with something to consider.</p>
+
+                    <!--
+                    ════════════════════════════════════════
+                    ENDNOTE QUICK REFERENCE
+                    In the body text, place endnotes like this:
+
+                        some text<cite class="en">Your note text here.</cite> more text
+
+                    That is all. Numbers are assigned in reading order
+                    and a "Notes" section is built automatically at the
+                    end of the post. No other markup needed.
+                    ════════════════════════════════════════
+                    -->
+
+                </div><!-- /content -->
+
+            </div><!-- /container -->
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Adam Ramadhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../filter.js"></script>
+    <script>
+        buildEndnotes();
+    </script>
+</body>
+</html>
